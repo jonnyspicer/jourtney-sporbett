@@ -1,0 +1,244 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --red: #E63946;
+    --off-white: #F1FAEE;
+    --light-blue: #A8DADC;
+    --blue: #457B9D;
+    --dark-blue: #1D3557;
+    
+    --primary: var(--dark-blue);
+    --background: var(--light-blue);
+    --text: var(--dark-blue);
+    --text-secondary: var(--blue);
+    --surface: var(--off-white);
+    --border: var(--blue);
+    --accent: var(--red);
+
+    --font-heading: 'Helserif', Georgia, serif;
+    --font-body: 'Folio', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--surface);
+    margin-bottom: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(29, 53, 87, 0.1), 0 1px 2px -1px rgba(29, 53, 87, 0.1);
+    border: 1px solid var(--blue);
+}
+
+h1, h2, .big-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--red);
+}
+
+h2 {
+    font-size: 1.875rem;
+    margin: 2rem 0 1rem;
+    color: var(--dark-blue);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.content {
+    background-color: var(--surface);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(29, 53, 87, 0.1), 0 1px 2px -1px rgba(29, 53, 87, 0.1);
+    border: 1px solid var(--blue);
+}
+
+main {
+    position: relative;
+    background-color: var(--surface);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(29, 53, 87, 0.1), 0 1px 2px -1px rgba(29, 53, 87, 0.1);
+    border: 1px solid var(--blue);
+}
+
+.section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Additional styles for dinner.html */
+.big-title {
+    text-align: center;
+    margin: 1rem 0 3rem;
+    font-size: 3.5rem;
+    color: var(--red);
+}
+
+hr {
+    margin: 3rem 0;
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+.back-button {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    padding: 8px 16px;
+    color: var(--blue);
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.back-button::before {
+    content: "←";
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover::before {
+    transform: translateX(-3px);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    header {
+        padding: 3rem 1.5rem;
+    }
+
+    .content, main {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .big-title {
+        font-size: 2.5rem;
+        margin: 1rem 0 2rem;
+    }
+
+    .back-button {
+        top: 16px;
+        left: 16px;
+    }
+}
+
+a {
+    color: var(--blue);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+p {
+    margin: 1rem 0;
+    color: var(--text-secondary);
+}
+
+em {
+    color: inherit;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#calendly-inline-widget {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 2rem;
+    box-shadow: 0 1px 3px rgba(29, 53, 87, 0.1), 0 1px 2px -1px rgba(29, 53, 87, 0.1);
+    border: 1px solid var(--blue);
+}
+
+.scroll-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.scroll-link::after {
+    content: "↓";
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.scroll-link:hover::after {
+    transform: translateY(3px);
+}
+
+.header-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 3px solid var(--blue);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--blue);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--light-blue);
+    transform: translateY(-2px);
+} 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="/index.html" class="back-button">Back</a>
+    <main>
+        
+        <h1 class="big-title">You're invited to dinner!</h1>
+        
+        <p><em><a href="#calendly-inline-widget" class="scroll-link">Scroll down to RSVP via Calendly</a></em></p>
+        <h2 id="what">What</h2>
+        <p>Extremely exclusive and high class dinners at our flat in Notting Hill (not really - please don't dress up or I'll feel like a dick). Spots are nominally limited (it's a small flat) but we like cosiness and struggle to say no, so even if there aren't any left then message one of us and we'll probably say it's fine to come anyway. There's no need to bring anything specific, though all dinners will be BYOB.</p>
+        <h2 id="who">Who</h2>
+        <p>You! Plus ones are welcome but please let us know ahead of time so we can make sure there's enough food for everyone.</p>
+        <h2 id="where">Where</h2>
+        <p>Notting Hill, walking distance from either Westbourne Park or Notting Hill Gate tube stations. The exact address is in the description of the WhatsApp group.</p>
+        <h2 id="when">When</h2>
+        <p>Every… so often. Maybe fortnightly? Who can say.</p>
+        <h2 id="why">Why</h2>
+        <p>Partially because we have friends that do it and their dinners are fun, partially because of <a href="https://prigoose.substack.com/p/how-to-live-near-your-friends" target="_blank">this blog post about how to live near your friends,</a> and partially because we're too busy to spend as much time with all our friends as we'd like.</p>
+        <hr>
+        <p><em>If the widget below doesn't work correctly for some reason then <a href="https://calendly.com/jonnyspicer/dinner" target="_blank">RSVP using this link instead.</a></em></p>
+        <p>To RSVP: select the next date with a blue circle around it, then pick 7:00pm (it's fine if you come later than that), click "Confirm", fill in your details and then click "Schedule Event". You might have to go to the next month for a date to be available, or there might not be one set up - if that's the case message us and gently nudge us to set the next date.</p>
+        <!-- Calendly inline widget begin -->
+        <div id="calendly-inline-widget" style="min-width:320px;height:950px;" data-auto-load="false"><div class="calendly-spinner"><div class="calendly-bounce1"></div><div class="calendly-bounce2"></div><div class="calendly-bounce3"></div></div><iframe src="https://calendly.com/jonnyspicer/dinner?embed_domain=jonnyspicer.com&amp;embed_type=Inline&amp;hide_gdpr_banner=1" width="100%" height="100%" frameborder="0" title="Select a Date &amp; Time - Calendly"></iframe></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        <script>
+        Calendly.initInlineWidget({
+        url: 'https://calendly.com/jonnyspicer/dinner?hide_gdpr_banner=1',
+        parentElement: document.getElementById('calendly-inline-widget'),
+        });
+        </script>
+        <!-- Calendly inline widget end -->
+
+
+    </main>
+</body>
+</html>
