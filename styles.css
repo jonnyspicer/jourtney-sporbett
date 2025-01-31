@@ -157,8 +157,8 @@ hr {
     }
 
     .back-button {
-        top: 16px;
-        left: 16px;
+        top: 0;
+        left: 0;
     }
 }
 
